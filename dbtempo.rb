@@ -5,21 +5,21 @@
 class Dbtempo < Formula
   desc "Database performance monitoring and query analysis CLI"
   homepage "https://dbtempo.com"
-  version "0.0.1453"
+  version "0.0.1509"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dbtempo/releases/releases/download/v0.0.1453/dbtempo_darwin_x86_64.tar.gz"
-      sha256 "e5d44c82e98012a25386b4d19689c933e80d1b7e6735915cbf58c46f7b19eed7"
+      url "https://github.com/dbtempo/releases/releases/download/v0.0.1509/dbtempo_darwin_x86_64.tar.gz"
+      sha256 "c426ca61bdd2c9d19fd62eaefa2fd4847da87f99dd5204f2cf4a414cdd6809f3"
 
       define_method(:install) do
         bin.install "dbtempo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dbtempo/releases/releases/download/v0.0.1453/dbtempo_darwin_arm64.tar.gz"
-      sha256 "ee09f46a15fd84d9076e67c77aa72fe6bc6c4767ba643f84a0a5623207209d82"
+      url "https://github.com/dbtempo/releases/releases/download/v0.0.1509/dbtempo_darwin_arm64.tar.gz"
+      sha256 "414d04d3eaa81b3157cc0dd75e90c779d35df130bf7cc02eee0066d784e7e4ac"
 
       define_method(:install) do
         bin.install "dbtempo"
@@ -29,15 +29,15 @@ class Dbtempo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dbtempo/releases/releases/download/v0.0.1453/dbtempo_linux_x86_64.tar.gz"
-      sha256 "093adebcc440228d95cf774f5801799d0cd209f8349472ab6c187e160a9817f5"
+      url "https://github.com/dbtempo/releases/releases/download/v0.0.1509/dbtempo_linux_x86_64.tar.gz"
+      sha256 "64796a936dfe1634c9e15cad7014daefd674d6c434084b6342d984ec2fe5f1f1"
       define_method(:install) do
         bin.install "dbtempo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dbtempo/releases/releases/download/v0.0.1453/dbtempo_linux_arm64.tar.gz"
-      sha256 "1a09d104fb748306dee56a04f1cb4586397c15b1a9ed40d0f70fc45e1b26e37e"
+      url "https://github.com/dbtempo/releases/releases/download/v0.0.1509/dbtempo_linux_arm64.tar.gz"
+      sha256 "336c78cadeb549945af88d22c9abb234acc7ed222ae50d2f7526e82db0ec86fc"
       define_method(:install) do
         bin.install "dbtempo"
       end
